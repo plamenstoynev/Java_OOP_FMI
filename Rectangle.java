@@ -4,14 +4,14 @@ public class Rectangle {
     private double width;
     private double height;
 
-    String color;
+    private static String color;
 
     public Rectangle(){};
 
     public Rectangle(double width, double height, String color){
         this.width = width;
         this.height = height;
-        this.color = color;
+        Rectangle.color = color;
     }
 
 
@@ -24,7 +24,7 @@ public class Rectangle {
     }
 
     String getColor(){
-        return this.color;
+        return color;
     }
 
     public void setWidth(double width){
@@ -42,7 +42,7 @@ public class Rectangle {
     }
 
     public void setColor(String color){
-        this.color = color;
+        Rectangle.color = color;
     }
 
     public double getArea(){
